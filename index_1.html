@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="preconnect" href="https://quantcast.mgr.consensu.org" /><link rel="preconnect" href="https://audit.quantcast.mgr.consensu.org" />
+<!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+<script async src="https://quantcast.mgr.consensu.org/choice/ef319LWA1Q2Gu/www.autoevolution.com/choice.js"></script>
+<script type="text/javascript" async=true>
+(function() {
+var host = window.location.hostname;
+var firstScript = document.getElementsByTagName('script')[0];
+var uspTries = 0; var uspTriesLimit = 3;
+function makeStub() {
+	var TCF_LOCATOR_NAME = '__tcfapiLocator'; var queue = []; var win = window; var cmpFrame;
+	function addFrame() { var doc = win.document; var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]); if (!otherCMP) { if (doc.body) { var iframe = doc.createElement('iframe'); iframe.style.cssText = 'display:none'; iframe.name = TCF_LOCATOR_NAME; doc.body.appendChild(iframe); } else { setTimeout(addFrame, 5); } } return !otherCMP; }
+	function tcfAPIHandler() { var gdprApplies; var args = arguments; if (!args.length) { return queue; } else if (args[0] === 'setGdprApplies') { if (args.length > 3 && args[2] === 2 && typeof args[3] === 'boolean') { gdprApplies = args[3]; if (typeof args[2] === 'function') { args[2]('set', true); } } } else if (args[0] === 'ping') { var retr = { gdprApplies: gdprApplies, cmpLoaded: false, cmpStatus: 'stub' }; if (typeof args[2] === 'function') { args[2](retr); }} else { queue.push(args); } }
+	function postMessageEventHandler(event) {var msgIsString = typeof event.data === 'string'; var json = {};try {if (msgIsString) { json = JSON.parse(event.data); } else { json = event.data; }} catch (ignore) {}var payload = json.__tcfapiCall;if (payload) {window.__tcfapi(payload.command,payload.version,function(retValue, success) {var returnMsg = { __tcfapiReturn: { returnValue: retValue, success: success, callId: payload.callId } };if (msgIsString) { returnMsg = JSON.stringify(returnMsg); }event.source.postMessage(returnMsg, '*');},payload.parameter);}}
+	while (win) {try {if (win.frames[TCF_LOCATOR_NAME]) {cmpFrame = win;break;}} catch (ignore) {}if (win === window.top) {break;}win = win.parent;}
+	if (!cmpFrame) { addFrame(); win.__tcfapi = tcfAPIHandler; win.addEventListener('message', postMessageEventHandler, false); }
+};
+makeStub();
+var uspStubFunction = function() {var arg = arguments;if (typeof window.__uspapi !== uspStubFunction) {setTimeout(function() {if (typeof window.__uspapi !== 'undefined') {window.__uspapi.apply(window.__uspapi, arg);}}, 500);}};
+var checkIfUspIsReady = function() {uspTries++;if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) { console.warn('USP is not accessible'); } else { clearInterval(uspInterval); }};
+if (typeof window.__uspapi === 'undefined') {window.__uspapi = uspStubFunction;var uspInterval = setInterval(checkIfUspIsReady, 6000);}
+})();
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D8YEMMP5NW"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D8YEMMP5NW', { 'cookie_domain': 'autoevolution.com', 'anonymize_ip': true, 'send_page_view': false });
+</script>
+<script>
+/*window.google_analytics_uacct = "UA-61277-6";*/
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-61277-6', 'autoevolution.com');
+ga('set', 'anonymizeIp', true);
+ga('set', 'transport', 'beacon');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<link rel="preconnect" href="https://securepubads.g.doubleclick.net/" />
+<link rel="preconnect" href="https://c.amazon-adsystem.com" />
+<link rel="preconnect" href="https://s.amazon-adsystem.com" />
+
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+window.googletag = window.googletag || {cmd: []};
+googletag.cmd.push(function(){
+	googletag.pubads().disableInitialLoad(); (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
+		window.slot_62cc6cb266d81 = googletag.defineSlot("/1004334/AE_vehicles_300x250_noref", [[300, 250]], "AE_vehicles_300x250_noref__placement_62cc6cb266d81__").addService(googletag.pubads()).setTargeting("refresh", "no");
+	window.slot_62cc6cb267906 = googletag.defineSlot("/1004334/AE_vehicles_300x600_noref", [[300, 600]], "AE_vehicles_300x600_noref__placement_62cc6cb267906__").addService(googletag.pubads()).setTargeting("refresh", "no");
+});
+
+window.__scripts_initialized = 0;
+window.__tcfapi('addEventListener', 2, function(tcData,success){
+	console.log(success, tcData);
+	if(window.__scripts_initialized == 0 && success && (tcData.eventStatus === 'tcloaded' || tcData.eventStatus == 'useractioncomplete')) {
+		console.log('enabling scripts');
+		window.__tcfapi('removeEventListener', 2, function (success) { }, tcData.listenerId);		
+		window.__scripts_initialized = 1;				
+		APS_GO();
+		console.log('SENDING pageview');
+		ga('send', 'pageview');
+		gtag('event', 'page_view');
+	}
+});
+
+function GPT_GO(){ console.log('GPT!'); googletag.pubads().setCentering(true); googletag.pubads().enableSingleRequest(); googletag.enableServices(); googletag.pubads().refresh(); (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=0; }
+
+function APS_GO() { 
+	console.log('APS 1st!'); 
+	!function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+	apstag.init({ pubID:  '7db38df2-4062-4df4-9018-dcf399a364c8',  adServer: 'googletag', timeout: 2e3, gdpr: { cmpTimeout: 100 } });	
+	apstag.fetchBids({slots: [ { slotName: "/1004334/AE_vehicles_300x250_noref", sizes: [[300, 250]], slotID: "AE_vehicles_300x250_noref__placement_62cc6cb266d81__" }, { slotName: "/1004334/AE_vehicles_300x600_noref", sizes: [[300, 600]], slotID: "AE_vehicles_300x600_noref__placement_62cc6cb267906__" } ], timeout: 2e3, params: { adRefresh: "0" }}, function(bids) { googletag.cmd.push(function() { apstag.setDisplayBids(); GPT_GO(); }); }); 
+}
+</script>
+
+<script>window.aelangvar = 'en';</script>
+<title>All AC  Models, Photo Galleries, Engines, Specs - autoevolution</title>
+<meta name="robots" content="max-image-preview:large" /><meta name=supported-media content="only screen and (min-width: 640px)">
+<meta name="language" content="en" /><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=980" />
+<link rel="preconnect" href="https://s1.cdn.autoevolution.com/" />
+<link rel="preconnect" href="https://www.google-analytics.com" />
+<link rel="apple-touch-icon" href="https://s1.cdn.autoevolution.com/_img/favicon_512.png" /><meta name="msapplication-TileImage" content="https://s1.cdn.autoevolution.com/_img/favicon_512.png" /><link rel="mask-icon" sizes="any" href="https://s1.cdn.autoevolution.com/_img/aefavicon.svg" color="#000000" />
+<link rel="icon" type="image/x-icon" href="https://s1.cdn.autoevolution.com/_img/favicon.ico?v=2016" /><link rel="shortcut icon" type="image/x-icon" href="https://s1.cdn.autoevolution.com/_img/favicon.ico?v=2016" />
+<link rel="alternate" type="application/rss+xml" title="autoevolution news" href="https://www.autoevolution.com/rss/backend.xml" />
+<link crossorigin rel="stylesheet" type="text/css" href="https://s1.cdn.autoevolution.com/_min/?v=409&amp;g=css">
+<link rel="canonical" href="https://www.autoevolution.com/ac/">
+<link rel="alternate" hreflang="x-default" href="https://www.autoevolution.com/ac/" />
+<link rel="alternate" hreflang="en" href="https://www.autoevolution.com/ac/" />
+<link rel="alternate" hreflang="fr" href="https://www.autoevolution.com/fr/voitures/ac/" />
+<link rel="alternate" hreflang="de" href="https://www.autoevolution.com/de/autos/ac/" />
+<meta name="description" content="List of production and discontinued AC  models with full specs and photo galleries">
+<meta name="keywords" content="AC , AC  models, AC  history, AC  specs, specifications">
+
+<script crossorigin type="text/javascript" src="https://s1.cdn.autoevolution.com/_min/?v=405&amp;g=js,jslang_en"></script>
+
+<!-- webfontloader -->
+<link crossorigin rel="preload" href="https://s1.cdn.autoevolution.com/_css/fonts/coresans/coresansn45-webfont.woff2?v=2" as="font" type="font/woff2">
+<link crossorigin rel="preload" href="https://s1.cdn.autoevolution.com/_css/fonts/coresans/coresansn65-webfont.woff2?v=2" as="font" type="font/woff2">
+<link crossorigin rel="preload" href="https://s1.cdn.autoevolution.com/_css/fonts/coresans/coresansnr47-webfont.woff2?v=2" as="font" type="font/woff2">
+<link crossorigin rel="preload" href="https://s1.cdn.autoevolution.com/_css/fonts/coresans/coresansnr57-webfont.woff2?v=2" as="font" type="font/woff2">
+<link crossorigin rel="preload" href="https://s1.cdn.autoevolution.com/_css/fonts/coresans/coresansnr67-webfont.woff2?v=2" as="font" type="font/woff2">
+<link crossorigin rel="preload" href="https://s1.cdn.autoevolution.com/_css/fonts/glyphutil/glyphutil_neue-webfont.woff2?v=927" as="font" type="font/woff2">
+<link rel="preload" href="https://s1.cdn.autoevolution.com/_css/fonts.css?v=405" as="style" >
+<script>
+WebFontConfig = {
+	classes: false,
+	events: false,
+	timeout: 2000,
+	custom: {
+		families: ['CoreSansN:n4,n7', 'CoreSansNRCond:n4,n5,n7', 'Glyphutil Neue'],
+		urls: ['https://s1.cdn.autoevolution.com/_css/fonts.css?v=405']
+	}
+};
+</script>
+<script src="https://s1.cdn.autoevolution.com/_js/webfont-1.6.28.js?v=1"></script>
+<!-- webfontloader -->
+
+</head>
+<body>
+
+<div id="topbar"><div class="container2">
+
+<i class="fa fa-bars" id="topmenubtn"></i>
+<a id="autoevolution" href="https://www.autoevolution.com/" title="autoevolution">autoevolution</a>
+<div id="topmenu" style="display:none;">
+<ul class="m1 clearfix">
+	<li><a href="https://www.autoevolution.com/cars/" title="Car models and specifications database">cars</a></li>
+	<li><a href="https://www.autoevolution.com/moto/" title="Motorcycle models and specifications database">moto</a></li>
+	<li><a href="https://www.autoevolution.com/news/" title="All latest news">news</a></li>
+	<li><a href="https://www.autoevolution.com/cars/reviews/?sort=date" title="Car reviews">car reviews</a></li>
+	<li><a href="https://www.autoevolution.com/spyshots/" title="Car spyshots and scoops">spyshots</a></li>
+	<li><a href="https://www.autoevolution.com/news/driven/" title="Driven cars">driven cars</a></li>
+	<li><a href="https://www.autoevolution.com/news/space-junk/" title="Space junk">space junk<!--<span class="black fsz13 line24">new</span>--></a></li>
+	<li><a href="https://www.autoevolution.com/green/" title="Green news">green</a></li>
+	<li class="newspaper"><a href="https://www.autoevolution.com/newspaper/" title="Newspaper">newspaper <span></span></a></li>
+</ul>
+<ul class="m2 clearfix">
+	<li><a href="https://www.autoevolution.com/carcompare.php" title="Compare cars">Compare Cars <i class="fa fa-car col-red fsz13"></i><i class="fa fa-car col-red fsz13 faded"></i></a></li>
+	<li><a href="https://www.autoevolution.com/bac/" title="Blood Alcohol Level Calculator">BAC Calculator &nbsp;<i class="fa fa-flask col-red2"></i></a></li>
+	<li><a href="https://www.autoevolution.com/editorial/" title="autoevolution editorials">Editorial</a></li>
+	<li><a href="https://www.autoevolution.com/coverstory/" title="autoevolution coverstories">Coverstory</a></li>
+	<li><a href="https://www.autoevolution.com/news/motorsport" title="Motorsport news">Motorsport</a></li>
+	<li><a href="https://www.autoevolution.com/reviews/" title="Testdrives archive">Testdrives archive</a></li>
+	<li><a href="https://www.autoevolution.com/auto-moto-shows/" title="Auto shows coverage index">Auto Shows</a></li>
+	<li><a href="https://www.autoevolution.com/news/tuning/" title="Auto tuning news">Tuning</a></li>
+	<li><a href="https://www.autoevolution.com/carfinder/" title="Car Finder">Car Finder</a></li>
+	<li><a href="https://www.autoevolution.com/newstag/pic%20of%20the%20day/" title="Photo of the Day">Photo of the Day</a></li>
+	<li class="long"><a href="https://www.autoevolution.com/auto-glossary/" title="Automotive terms and acronyms database">Glossary of automotive terms</a></li>
+	<div class="clearfix"></div>
+</ul>
+<ul class="m3 clearfix">
+	<li><a href="https://www.autoevolution.com/editors/" title="Meet the autoevolution writers and editors">Masthead</a></li>
+	<li><a href="https://www.autoevolution.com/rss-channels/" title="Follow autoevolution via RSS">RSS Feeds</a></li>
+</ul>
+</div>
+
+<div id="topsearch" class="xsgrad1"><form method="post" action="https://www.autoevolution.com/search.php"><input type="hidden" name="subm" value="1" />
+<input type="hidden" name="t" value="cars" /><input type="text" name="s" value="Search here..." data-defl="Search here..." /><button type="submit" class="fa fa-search"></button>
+</form></div>
+
+<div id="rtopmenu" class="fr">
+	<a href="https://www.autoevolution.com/sendtip/" title="Have a news tip? Let us know!"><i class="fa fa-tip col-white"></i></a>
+	<i class="fa fa-newspaper rtm-paper col-gold posrel " title="Customize and read your newspaper">
+		</i>
+	<i class="fa fa-heart rtm-like" title="Follow us on social media"></i>
+	<i class="fa fa-info-circle rtm-info" title="Useful information"></i>
+</div>
+
+</div></div>
+
+<div class="container2">
+	<div id="topwhite" class="h50">
+			<script>
+		const prevMonthlyFeatures = ['Open Top', 'Land Rover', 'Tuning', 'Iconic Vehicles', 'American', 'Travel', 'Italian', 'Mustang', 'Space', 'Truck', 'Ford', 'Celebration', 'Chevrolet', 'Tesla', 'Porsche', 'Expedition Vehicles', 'Toyota', 'Custom Builds', 'Two-wheeler', 'Muscle Car', 'Earth', 'Harley-Davidson', 'Ferrari', 'BMW M'];		
+		function eventbar_toggle() {
+			if($('#event_history').html().length < 100) {
+				var tmp = ''; 
+				for(const i of prevMonthlyFeatures) tmp += '<a href="https://www.autoevolution.com/newstag/'+encodeURI(i == 'Harley-Davidson' ? 'HD' : i)+'+Month">'+i+' Month &nbsp;<i class="fa fa-long-arrow-right"></i></a>';
+				$('#event_history').html(tmp); tmp =  null;
+			}
+			$('#event_history').toggle();
+		}
+		</script>
+		<div class="eventbar">
+			<a href="https://www.autoevolution.com/newstag/RV+Month?utm_source=ae_self&utm_medium=ae_eventline_desktop&utm_campaign=ae_month_rv" title="RV Month">
+				<b class="faded">FEATURED</b> &nbsp;
+				<svg style="height: 1em; position: relative; top: 0.1em; right: 0.2em;" aria-hidden="true" focusable="false" data-prefix="fad" data-icon="cars" class="svg-inline--fa fa-cars fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><defs><style>.fa-secondary{opacity:.4}</style></defs><path d="M240 448a64 64 0 1 1-64-64 64 64 0 0 1 64 64zm400-133.5V384a32.09 32.09 0 0 1-32 32h-21.56a96 96 0 0 0-170.5-21.07V192l101.58.2a64.3 64.3 0 0 1 45.39 18.8l58.29 58.3a64.29 64.29 0 0 1 18.8 45.2zM572 288l-43.29-43.3a15.89 15.89 0 0 0-11.3-4.7h-37.48v48zm-76.08 96a64 64 0 1 0 64 64 64 64 0 0 0-64-64z" fill="currentColor" class="fa-secondary"/><path d="M512 32H384V16a16 16 0 0 0-16-16H240a16 16 0 0 0-16 16v16H64A64.07 64.07 0 0 0 0 96v197.54a64 64 0 0 0 18.7 45.31l69.78 69.7a96 96 0 0 1 178 7.45H384V160h192c17.9 0 32.1-14.8 32-32.8A96 96 0 0 0 512 32zM256 208a16 16 0 0 1-16 16H112a16 16 0 0 1-16-16v-64a16 16 0 0 1 16-16h128a16 16 0 0 1 16 16z" fill="currentColor" class="fa-primary"/></svg>
+				autoevolution's <span class="col-red">RV Month <i class="fa fa-long-arrow-right"></i></span>
+			</a>
+			<div id="eventbar_toggle" onclick="eventbar_toggle()"><i class="fa fa-caret-down"></i></div>
+		</div>
+		<div id="event_history"></div>
+		</div>
+</div>
+
+<div id="pagewrapper">
+<div class="container2 clearfix" itemscope itemtype="https://schema.org/Brand">
+<div id="newscol1">
+	<div class="brandinfo"><div class="pic"><img src="https://s1.cdn.autoevolution.com/images/producers/ac-sm.jpg" itemprop="logo" title="AC  logo" alt="AC  logo" /></div>
+	<p><b class="col-green2">0</b> <span>production models</span></p>
+	<p><b class="col-red">5</b> <span>discontinued models</span></p>
+	</div>
+
+	
+	<div class="ad300x250 mgtop_30 mgbot_30">
+	<div id="AE_vehicles_300x250_noref__placement_62cc6cb266d81__" style="width:100%;height:auto"></div><script>googletag.cmd.push(function(){ googletag.display("AE_vehicles_300x250_noref__placement_62cc6cb266d81__");  });</script>	</div>
+
+	<div class="histbox sidebox2">
+		<div class="title padsides_20">history <i class="fa fa-book"></i></div>
+		<div class="txt prodhist" itemprop="description">&nbsp;The AC is one of the oldest carmakers in the U.K., being established in 1901 in West Norwood, London, and over time it was liquidated or renamed due to financial troubles.<br />
+<br />
+In the beginning, the Weller Bros. started as a small shop where they repaired cars and motorcycles. Since they had to produce some parts for the vehicles, they worked on. Soon they realized that they could build a car from scratch. In 1902, a local investor, John Portwine, became a stakeholder in the Weller Bros LTD.<br />
+<br />
+In 1903, the Weller Brothers unveiled their first prototype at the Crystal Palace Motor Show. It was a four-wheel touring car with a 20 hp engine. Portwine, as a successful businessman, persuaded John Weller to create a three-wheeled delivery vehicle. In 1904, the tricycle was ready, and the company changed its name to Autocar and Accessories.<br />
+<br />
+The tricycle had two wheels at the front and one at the rear with an in-hub two-speed gear. Its small, two-stroke engine sent the power to the rear wheels via a chain. It was an instant success. Portwine was right. Four years later, Autocar and Accessories removed the cargo box and replaced it with a half-convertible canvas and a seat. It was a motorized tricycle that could carry one person, and it stayed in production until 1914. In November 1907, Autocar and Accessories changed its name to Autocarriers LTD and used the abbreviation AC and the rounded logo.<br />
+<br />
+In 1914, Autocarriers made the decisive step toward four-wheel vehicles and introduced its first production car, the AC Light Car. But the production lasted only for two years until World War I started. The War Office asked AutoCarriers to adapt light-armored bodyworks on top of the AC Light Car and also to transform the tricycle into war machines. The latter was used by London Cyclist Regiment and featured a front-mounted Maxim machine-gun.<br />
+<br />
+After WWI, the company was bought by Selwyn F. Edge and appointed as Governing Director (CEO). Weller and Portwine resigned, and the company was renamed AC Cars LTD in 1922. Edge was a racing driver, and he saw the future for the last masterpiece engine designed by Weller. It was an inline-six unit with chain distribution and a patented spring slipper chain tensioner, used later on by most car manufacturers.<br />
+<br />
+With the new racing driver in the CEO seat, AC Cars started to make its name in motor racing and won many races, including the 1926 Monte Carlo Rally. But the best was yet to come. In 1953, AC Cars launched the ACE model. It used a tubular chassis and a light roadster bodywork. The carmaker successfully introduced a coupe version for it in the following year. Its better aerodynamic shape made the 1954 ACE Aceca break the 200 kph barrier and reached 128 mph (206 kph). Its motorsport achievements didn&#039;t get unnoticed, and Carroll Shelby stopped by AC Cars in 1961 to negotiate the design and production process. And that&#039;s how the famous AC Cobra was born.<br />
+<br />
+After the AC Ace, the British carmaker developed new vehicles, but none had the ACE success. In 1996, a South African businessman bought the British company&#039;s remains and tried to revive the brand. In 2003, Carroll Shelby International and AC Motor Holdings LTD announced a new car built together. Unfortunately, the joint-venture produced only the prototype. For three years, between 2004 and 2007, AC built the MkV in Malta with a carbon-fiber bodywork but kept the original design.<br />
+<br />
+After a century of struggles, the British brand still existed, but without a strong investor, the AC might sit next to other special brands from the past.</div>
+		<div class="btn mgbot_40"><span onclick="sidebox_toggletxt(this);"><i class="fa fa-long-arrow-down"></i><span>expand</span></span></div>
+	</div>
+
+	<div class="fl posrel" id="leankare"></div>
+	<div class="ad300x600 mgbot_30">
+	<div id="AE_vehicles_300x600_noref__placement_62cc6cb267906__" style="width:100%;height:auto"></div><script>googletag.cmd.push(function(){ googletag.display("AE_vehicles_300x600_noref__placement_62cc6cb267906__");  });</script>	</div>
+
+	<div class="moreonthis bulleted"><div class="title titletype1">AC  news:</div><a href="https://www.autoevolution.com/news/blue-shelby-cobra-289-fia-continuation-is-an-enticing-unicorn-looking-for-new-rider-190043.html?utm_source=ae_self&utm_medium=ae_moreon&utm_campaign=ae_moreon_news_static" title="Blue Shelby Cobra 289 FIA Continuation Is an Enticing Unicorn Looking for New Rider"><img loading="lazy" decoding="async" width="90" height="60" title="Blue Shelby Cobra 289 FIA Continuation Is an Enticing Unicorn Looking for New Rider" alt="Blue Shelby Cobra 289 FIA Continuation Is an Enticing Unicorn Looking for New Rider" src="https://s1.cdn.autoevolution.com/images/news/blue-shelby-cobra-289-fia-continuation-is-an-enticing-unicorn-looking-for-new-rider-190043-3.jpg"/><span><b class="black bull">1</b> Blue Shelby Cobra 289 FIA Continuation Is an Enticing Unicorn Looking for New Rider</span></a><a href="https://www.autoevolution.com/news/1960-ac-greyhound-found-under-piles-of-junk-get-a-glow-up-is-a-true-sleeping-beauty-187131.html?utm_source=ae_self&utm_medium=ae_moreon&utm_campaign=ae_moreon_news_static" title="1960 AC Greyhound Found Under Piles of Junk Gets a Glow-Up, Is a True Sleeping Beauty"><img loading="lazy" decoding="async" width="90" height="60" title="1960 AC Greyhound Found Under Piles of Junk Gets a Glow-Up, Is a True Sleeping Beauty" alt="1960 AC Greyhound Found Under Piles of Junk Gets a Glow-Up, Is a True Sleeping Beauty" src="https://s1.cdn.autoevolution.com/images/news/1960-ac-greyhound-found-under-piles-of-junk-get-a-glow-up-is-a-true-sleeping-beauty-187131-3.jpg"/><span><b class="black bull">2</b> 1960 AC Greyhound Found Under Piles of Junk Gets a Glow-Up, Is a True Sleeping Beauty</span></a><a href="https://www.autoevolution.com/news/slammed-and-white-or-red-cobra-enjoys-a-rosy-digital-field-on-rotiform-aerodics-186087.html?utm_source=ae_self&utm_medium=ae_moreon&utm_campaign=ae_moreon_news_static" title="Slammed and White or Red Cobra Enjoys a Rosy Digital Field on Rotiform Aerodics"><img loading="lazy" decoding="async" width="90" height="60" title="Slammed and White or Red Cobra Enjoys a Rosy Digital Field on Rotiform Aerodics" alt="Slammed and White or Red Cobra Enjoys a Rosy Digital Field on Rotiform Aerodics" src="https://s1.cdn.autoevolution.com/images/news/slammed-and-white-or-red-cobra-enjoys-a-rosy-digital-field-on-rotiform-aerodics-186087-3.jpg"/><span><b class="black bull">3</b> Slammed and White or Red Cobra Enjoys a Rosy Digital Field on Rotiform Aerodics</span></a><a href="https://www.autoevolution.com/news/digitally-vintage-shelby-cobra-targa-feels-a-bit-like-an-ac-911-mashup-barn-find-184196.html?utm_source=ae_self&utm_medium=ae_moreon&utm_campaign=ae_moreon_news_static" title="Digitally Vintage Shelby Cobra Targa Feels a Bit Like an AC/911 Mashup Barn Find"><img loading="lazy" decoding="async" width="90" height="60" title="Digitally Vintage Shelby Cobra Targa Feels a Bit Like an AC/911 Mashup Barn Find" alt="Digitally Vintage Shelby Cobra Targa Feels a Bit Like an AC/911 Mashup Barn Find" src="https://s1.cdn.autoevolution.com/images/news/digitally-vintage-shelby-cobra-targa-feels-a-bit-like-an-ac-911-mashup-barn-find-184196-3.jpg"/><span><b class="black bull">4</b> Digitally Vintage Shelby Cobra Targa Feels a Bit Like an AC/911 Mashup Barn Find</span></a><a href="https://www.autoevolution.com/news/timeless-shelby-cobra-427-digitally-rides-on-apparently-modern-acrylic-wheels-179149.html?utm_source=ae_self&utm_medium=ae_moreon&utm_campaign=ae_moreon_news_static" title="Timeless Shelby Cobra 427 Digitally Rides on Apparently Modern Acrylic Wheels"><img loading="lazy" decoding="async" width="90" height="60" title="Timeless Shelby Cobra 427 Digitally Rides on Apparently Modern Acrylic Wheels" alt="Timeless Shelby Cobra 427 Digitally Rides on Apparently Modern Acrylic Wheels" src="https://s1.cdn.autoevolution.com/images/news/timeless-shelby-cobra-427-digitally-rides-on-apparently-modern-acrylic-wheels-179149-3.jpg"/><span><b class="black bull">5</b> Timeless Shelby Cobra 427 Digitally Rides on Apparently Modern Acrylic Wheels</span></a><a href="https://www.autoevolution.com/news/tesla-model-s-plaid-faces-tuned-gt-r-on-a-drag-strip-you-see-where-this-is-going-177931.html?utm_source=ae_self&utm_medium=ae_moreon&utm_campaign=ae_moreon_news_static" title="Tesla Model S Plaid Faces Tuned GT-R on a Drag Strip, You See Where This Is Going"><img loading="lazy" decoding="async" width="90" height="60" title="Tesla Model S Plaid Faces Tuned GT-R on a Drag Strip, You See Where This Is Going" alt="Tesla Model S Plaid Faces Tuned GT-R on a Drag Strip, You See Where This Is Going" src="https://s1.cdn.autoevolution.com/images/news/tesla-model-s-plaid-faces-tuned-gt-r-on-a-drag-strip-you-see-where-this-is-going-177931-3.jpg"/><span><b class="black bull">6</b> Tesla Model S Plaid Faces Tuned GT-R on a Drag Strip, You See Where This Is Going</span></a><a href="https://www.autoevolution.com/news/dax-cobra-electric-restomod-is-the-latest-heresy-from-ava-electrifi-167029.html?utm_source=ae_self&utm_medium=ae_moreon&utm_campaign=ae_moreon_news_static" title="Dax Cobra Electric Restomod Is the Latest Heresy From AVA Electrifi"><img loading="lazy" decoding="async" width="90" height="60" title="Dax Cobra Electric Restomod Is the Latest Heresy From AVA Electrifi" alt="Dax Cobra Electric Restomod Is the Latest Heresy From AVA Electrifi" src="https://s1.cdn.autoevolution.com/images/news/dax-cobra-electric-restomod-is-the-latest-heresy-from-ava-electrifi-167029-3.jpg"/><span><b class="black bull">7</b> Dax Cobra Electric Restomod Is the Latest Heresy From AVA Electrifi</span></a></div></div>
+
+<div id="newscol2" class="col2width">
+<h1 class="padsides_20i newstitle innews mgbot_0"><a itemprop="url" href="https://www.autoevolution.com/ac/" title="AC  Models &amp; Brand History"><b itemprop="name">AC </b> <span>Models &amp; Brand History</span></a></h1>
+<div class="breadcrumb innews padsides_20i mgbot_0">
+	<span itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><meta itemprop="position" content="1" /><a href="https://www.autoevolution.com/" itemprop="item" title="Home"><span itemprop="name">Home</span></a></span> &gt; <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><meta itemprop="position" content="2" /><a href="https://www.autoevolution.com/cars/" itemprop="item" title="Cars"><span itemprop="name">Cars</span></a></span> &gt; <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><meta itemprop="position" content="3" /><span itemprop="name">AC </span><meta itemtype="http://schema.org/Thing" itemprop="item" content="https://www.autoevolution.com/ac/" /></span></span>	<div class="fr">Updated:  6 December 2021</div></div>
+
+<div class="carpages col23width posrel ttl2 mgbot_20 mgtop_20 col-white gradx1">discontinued models:<div class="sort"><span class="col-red"><i class="fa fa-long-arrow-down"></i><i class="fa fa-long-arrow-up"></i> sort:</span><a title="Sort by year" href="?sort=year">year</a><a title="Sort by name" href="?sort=name" class="col-grey4">name</a></div></div><div class="carmodels col23width clearfix"><div class="carmod clearfix disc">
+<div class="col2width bcol-white fl">
+<a href="https://www.autoevolution.com/ac/ace/" title="AC  Ace specs and photos"><img loading="lazy" decoding="async" title="AC  Ace specs and photos" alt="AC  Ace specs and photos" src="https://s1.cdn.autoevolution.com/images/models/thumb/AC-_Ace-1993_main.jpg_tmb.jpg" width="90" height="60" class="faded" /><h4>AC  Ace</h4></a>
+<p class="body">convertibles</p>
+<p class="eng"><span>Gasoline</span></p>
+</div>
+<div class="col3width fl">
+<p><b class="col-red">1</b> generation</p>
+<span>1993 - 1996</span>
+</div>
+</div>
+<div class="carmod clearfix disc">
+<div class="col2width bcol-white fl">
+<a href="https://www.autoevolution.com/ac/aceca/" title="AC  Aceca specs and photos"><img loading="lazy" decoding="async" title="AC  Aceca specs and photos" alt="AC  Aceca specs and photos" src="https://s1.cdn.autoevolution.com/images/models/thumb/AC-_Aceca-1998_main.jpg_tmb.jpg" width="90" height="60" class="faded" /><h4>AC  Aceca</h4></a>
+<p class="body">coupes</p>
+<p class="eng"><span>Gasoline</span></p>
+</div>
+<div class="col3width fl">
+<p><b class="col-red">1</b> generation</p>
+<span>1998 - 2000</span>
+</div>
+</div>
+<div class="carmod clearfix disc">
+<div class="col2width bcol-white fl">
+<a href="https://www.autoevolution.com/ac/cobra/" title="AC  Cobra specs and photos"><img loading="lazy" decoding="async" title="AC  Cobra specs and photos" alt="AC  Cobra specs and photos" src="https://s1.cdn.autoevolution.com/images/models/thumb/AC-_Cobra-378-MkIV-2020_main.jpg_tmb.jpg" width="90" height="60" class="faded" /><h4>AC  Cobra</h4></a>
+<p class="body">coupes</p>
+<p class="eng"><span>Gasoline</span></p>
+</div>
+<div class="col3width fl">
+<p><b class="col-red">3</b> generations</p>
+<span>1965 - 1967</span>
+</div>
+</div>
+<div class="carmod clearfix disc">
+<div class="col2width bcol-white fl">
+<a href="https://www.autoevolution.com/ac/frua-convertible/" title="AC  Frua Convertible specs and photos"><img loading="lazy" decoding="async" title="AC  Frua Convertible specs and photos" alt="AC  Frua Convertible specs and photos" src="https://s1.cdn.autoevolution.com/images/models/thumb/AC-_428-Convertible-1966_main.jpg_tmb.jpg" width="90" height="60" class="faded" /><h4>AC  Frua Convertible</h4></a>
+<p class="body">convertibles</p>
+<p class="eng"><span>Gasoline</span></p>
+</div>
+<div class="col3width fl">
+<p><b class="col-red">1</b> generation</p>
+<span>1966 - 1971</span>
+</div>
+</div>
+<div class="carmod clearfix disc">
+<div class="col2width bcol-white fl">
+<a href="https://www.autoevolution.com/ac/frua-coupe/" title="AC  Frua Coupe specs and photos"><img loading="lazy" decoding="async" title="AC  Frua Coupe specs and photos" alt="AC  Frua Coupe specs and photos" src="https://s1.cdn.autoevolution.com/images/models/thumb/AC-_428-Coupe-1966_main.jpg_tmb.jpg" width="90" height="60" class="faded" /><h4>AC  Frua Coupe</h4></a>
+<p class="body">coupes</p>
+<p class="eng"><span>Gasoline</span></p>
+</div>
+<div class="col3width fl">
+<p><b class="col-red">1</b> generation</p>
+<span>1966 - 1973</span>
+</div>
+</div>
+</div>
+
+<div class="newsrevbox col23width">
+</div>
+
+</div>
+
+<div class="col3width fl">&nbsp;</div>
+
+</div>
+
+<script>
+function aerunstartup()
+{
+	fixlayout_type1('#newscol1', '#newscol2');
+	$(window).on("resize", function() { fixlayout_type1('#newscol1', '#newscol2'); });
+}
+</script>
+<div class="clearfix"></div>
+</div><!-- pagewrapper -->
+
+<div id="footer">
+	<div class="container">
+		<div id="footcol1">
+			<a href="/rss-channels/" class="fa fa-rss fl col-red"></a>
+			<a href="https://www.autoevolution.com/" id="footauto" title="autoevolution">autoevolution</a>
+			<span id="footprivacyl">
+				<a href="/contact/" title="Contact Us">Contact Us</a> &bull;
+				<a href="/editors/" title="autoevolution masthead &amp; editorial team members">Masthead</a>  &bull;				<a href="/static/privacy.html" title="Privacy Policy">Privacy Policy</a> &bull;
+				<a href="/static/cookies.html" title="Cookies Policy">Cookies Policy</a>
+				<br/>
+				EU/UK residents: <a title="Review or change your cookie settings" href="javascript:;" onclick="window.__tcfapi('displayConsentUi', 2, function(){});">Cookie Settings</a>			</span>
+		</div>
+		<div id="footcol2">
+			<ul>
+							<li><a href="/cars/" title="Cars">Cars</a></li>
+				<li><a href="/moto/" title="Moto">Moto</a></li>
+				<li><a href="/news/" title="News">News</a></li>
+				<li><a href="/cars/reviews/" title="Car Reviews">Reviews</a></li>
+				<li><a href="/editorial/" title="Editorials">Editorials</a></li>
+				<li><a href="/coverstory/" title="Coverstory">Coverstory</a></li>
+				<li><a href="/auto-guide/" title="Auto How-to">How-to</a></li>
+				<li><a href="/auto-glossary/" title="Automotive Terms Glossary">Glossary</a></li>
+				<li><a href="/carfinder/" title="Car Finder">Car finder</a></li>
+				<li><a href="/bac/" title="Blood Alcohol Calculator">BAC</a></li>
+						</ul>
+			<p>&copy; 2008-2022 SoftNews Net SRL.<br/>All rights reserved. autoevolution&reg; and the autoevolution&reg; logo are registered trademarks.</p>
+		</div>
+		<div class="fgoup" onclick="$('html, body').animate({ scrollTop: 0 }, 'slow');"><i class="fa fa-caret-up"></i></div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org", "@type": "Organization", "url": "https://www.autoevolution.com/", "logo": "https://www.autoevolution.com/_img/autoevolution_logo_2016_ldjs.png", "name": "autoevolution",  "sameAs" : [
+		"https://www.facebook.com/autoevolution",
+		"https://twitter.com/_autoevolution_",
+		"https://flipboard.com/@autoevolution/autoevolution-e4m5gpaay"
+	]
+}
+</script>
+<script type="application/ld+json">{ "@context": "http://schema.org", "@type": "WebSite", "name": "autoevolution", "url": "https://www.autoevolution.com/" }</script>
+
+
+<script>
+window.onload=function() {
+	$(window).on("click", aeclosemenus1);
+	$("#topmenubtn").on("click", aetopmenu_toggle);
+	$("#rtopmenu i.fa").on("click", rmnu_toggle);
+};
+
+window.aegal_cty = 'SK';
+window.aegal_ggon=0;
+window.aegal_xdsect='cars';
+
+if(typeof aerunstartup=="function") aerunstartup();
+aeinputdefaults('input[type="text"]');
+</script>
+
+<script>
+$(document).ready(function(){
+	if(!ae_getcookie('cooknotif2018')) {
+		$('body').append('<div id="cookienotif">We use cookies to improve your experience. By using the site you agree to the use of cookies <a class="red" href="javascript:;" onclick="$(\'#cookienotif\').remove();ae_setcookie(\'cooknotif2018\', 1, 365);">Accept &amp; close</a><br/>For more information and options regarding cookies and personal data see our <a href="/static/cookies.html" title="Cookie Policy">Cookies Policy</a> and <a href="/static/privacy.html" title="Privacy Policy">Privacy Policy</a>'+
+				'</div>');
+	}
+});
+</script>
+
+
+</body>
+</html>
